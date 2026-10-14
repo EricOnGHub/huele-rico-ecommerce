@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+# Demo environment; update only when real product inventory, shipping, policies and SEO pages are live.
