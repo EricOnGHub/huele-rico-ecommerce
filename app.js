@@ -18,7 +18,23 @@ function renderProducts(){const count=document.querySelector('#savedCount');if(c
 
 function persist(){localStorage.setItem('huele-cart',JSON.stringify(cart));renderCart()}
 function add(id){cart[id]=(cart[id]||0)+1;persist();openCart();window.HueleAnalytics?.track('add_to_cart',{currency:'USD',value:inventory.find(p=>p.id===id).price,items:[{item_id:String(id),item_name:inventory.find(p=>p.id===id).name,item_brand:inventory.find(p=>p.id===id).brand,price:inventory.find(p=>p.id===id).price,quantity:1}]})}
-function renderCart(){const ids=Object.keys(cart).filter(id=>cart[id]>0);$('#cartCount').textContent=ids.reduce((s,id)=>s+cart[id],0);$('#cartItems').innerHTML=ids.length?ids.map(id=>{const p=inventory.find(x=>x.id===+id);return '<div class="cart-line"><div><strong>'+p.brand+' '+p.name+'</strong><small>'+p.size+'</small><div class="qty"><button data-qty="'+id+'" data-step="-1">−</button>'+cart[id]+'<button data-qty="'+id+'" data-step="1">+</button></div></div><strong>'+money(cart[id]*p.price)+'</strong></div>'}).join(''):'<p class="empty">'+(language==='es'?'Tu bolsa está vacía.':'Your cart is empty.')+'</p>';$('#subtotal').textContent=money(ids.reduce((s,id)=>s+inventory.find(p=>p.id===+id).price*cart[id],0))}
+function renderCart(){
+ const ids=Object.keys(cart).filter(id=>cart[id]>0&&inventory.some(p=>p.id===Number(id)));
+ const count=ids.reduce((s,id)=>s+cart[id],0);
+ const total=ids.reduce((s,id)=>s+inventory.find(p=>p.id===Number(id)).price*cart[id],0);
+ const es=language==='es';
+ $('#cartCount').textContent=count;
+ $('#cartItems').innerHTML=ids.length?ids.map(id=>{
+  const p=inventory.find(x=>x.id===Number(id)),photo='./assets/products/'+p.id+'.webp';
+  return '<article class="cart-product"><div class="cart-product-image"><img src="'+photo+'" alt="'+p.brand+' '+p.name+'" onload="this.classList.add(\'loaded\')" onerror="this.remove()"><span>'+p.brand+'</span></div><div class="cart-product-info"><p class="cart-product-brand">'+p.brand+'</p><a href="./product.html?id='+p.id+'" class="cart-product-name">'+p.name+'</a><p class="cart-product-meta">'+p.size+' · '+p.type+'</p><div class="cart-quantity"><button type="button" aria-label="'+(es?'Disminuir':'Decrease')+' '+p.name+'" data-qty="'+id+'" data-step="-1">−</button><span aria-label="'+(es?'Cantidad':'Quantity')+'">'+cart[id]+'</span><button type="button" aria-label="'+(es?'Aumentar':'Increase')+' '+p.name+'" data-qty="'+id+'" data-step="1">+</button><button type="button" class="cart-remove" data-remove="'+id+'">'+(es?'Eliminar':'Remove')+'</button></div></div><strong class="cart-item-total">'+money(p.price*cart[id])+'</strong></article>';
+ }).join(''):'<div class="cart-empty"><p>'+ (es?'Tu carrito está vacío.':'Your cart is empty.')+'</p><a href="#shop" id="continueShopping">'+(es?'Explorar fragancias':'Explore fragrances')+' →</a></div>';
+ $('#subtotal').textContent=money(total);
+ const itemCount=document.querySelector('#cartItemCount');if(itemCount)itemCount.textContent=count+' '+(es?(count===1?'artículo':'artículos'):(count===1?'item':'items'));
+ const label=document.querySelector('#cartShippingText');if(label)label.textContent=es?'Envío y cargos definitivos se confirman al pagar.':'Final shipping and charges are confirmed at checkout.';
+ const assurance=document.querySelector('#cartAssurance');if(assurance)assurance.textContent=es?'Compra con confianza · Conoce nuestra promesa de autenticidad.':'Shop confidently · Learn about our authenticity promise.';
+ const checkout=$('#checkout');checkout.disabled=!ids.length||!window.HUELE_CONFIG?.shopifyDomain||!window.HUELE_CONFIG?.storefrontAccessToken;
+ const notice=document.querySelector('#checkoutMessage');if(notice)notice.textContent=checkout.disabled?(es?'Vista previa: pago disponible después de conectar Shopify y verificar el inventario.':'Preview only: checkout opens after Shopify and verified inventory are connected.'):'';
+}
 function openCart(){$('#cartDrawer').classList.add('open');$('#cartDrawer').setAttribute('aria-hidden','false');$('#overlay').hidden=false;$('#cartClose').focus()}
 function closeCart(){$('#cartDrawer').classList.remove('open');$('#cartDrawer').setAttribute('aria-hidden','true');$('#overlay').hidden=true}
 function details(id){const p=inventory.find(x=>x.id===id);$('#modalContent').innerHTML='<div class="modal-details">'+visual(p)+'<div><p class="product-brand">'+p.brand+'</p><h2>'+p.name+'</h2><p>'+p.size+' · '+p.type+'</p><p>'+p.notes+'</p><div class="price-line">'+money(p.price)+' <s>'+money(p.retail)+'</s></div><p>'+(language==='es'?'Precio ilustrativo. Confirma el producto y su precio antes de comprar.':'Illustrative price only. Verify product and price before purchase.')+'</p><button class="btn gold" data-add="'+p.id+'">'+(language==='es'?'AÑADIR AL CARRITO':'ADD TO CART')+'</button></div></div>';$('#productModal').hidden=false;$('#modalClose').focus()}
@@ -115,3 +131,6 @@ document.querySelectorAll('[data-scent]').forEach(b=>b.addEventListener('click',
   // Re-render once to apply image-ready presentation; handle missing images safely.
   renderProducts();
 })();
+
+// Cart: removal, continue shopping and language synchronization.
+document.addEventListener('click',e=>{const remove=e.target.closest('[data-remove]');if(remove){delete cart[remove.dataset.remove];persist();}if(e.target.closest('#continueShopping'))closeCart();});
