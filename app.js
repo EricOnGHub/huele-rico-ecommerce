@@ -49,3 +49,69 @@ const budgetSelect=document.querySelector('#budgetFilter');if(budgetSelect)budge
 function clearDiscovery(){familyFilter='';brandFilter='';budgetFilter='all';category='All';savedOnly=false;[familySelect,brandSelect].forEach(el=>{if(el)el.value=''});if(budgetSelect)budgetSelect.value='all';document.querySelector('#search').value='';document.querySelectorAll('[data-category]').forEach(el=>el.classList.toggle('active',el.dataset.category==='All'));const w=document.querySelector('#wishlistFilter');if(w)w.setAttribute('aria-pressed','false');renderProducts()}
 document.querySelector('#clearDiscovery')?.addEventListener('click',clearDiscovery);
 document.querySelectorAll('[data-scent]').forEach(b=>b.addEventListener('click',()=>{familyFilter=b.dataset.scent;if(familySelect)familySelect.value=familyFilter;location.hash='shop';renderProducts()}));
+
+
+/* Shopping-experience enhancements: no invented product photos, inventory or reviews. */
+(function(){
+  const tr=(en,es)=>document.documentElement.lang==='es'?es:en;
+  const imageSrc=id=>'./assets/products/'+id+'.webp';
+  // Empty/missing image slots are intentional until licensed product photography is uploaded.
+  const originalVisual=visual;
+  visual=function(p){
+    const fallback=originalVisual(p);
+    return '<div class="image-ready-wrap"><img class="real-product-photo" src="'+imageSrc(p.id)+'" alt="'+p.brand+' '+p.name+'" loading="lazy" onload="this.classList.add(\'photo-ready\');this.nextElementSibling.hidden=true" onerror="this.remove()"><div class="photo-fallback">'+fallback+'</div></div>';
+  };
+  const originalRender=renderProducts;
+  renderProducts=function(){
+    originalRender();
+    document.querySelectorAll('#products .product').forEach(card=>{
+      const name=card.querySelector('.product-title')?.textContent||'';
+      const p=inventory.find(x=>name.includes(x.name));
+      if(!p)return;
+      const container=card.querySelector('.product-copy')||card;
+      if(!card.querySelector('.product-card-benefit')){
+        const info=document.createElement('div');info.className='product-card-benefit';
+        info.textContent=tr('Explore scent notes · Authenticity promise','Explora las notas · Garantía de autenticidad');
+        container.append(info);
+      }
+    });
+  };
+  const mobileNav=document.querySelector('.header nav');
+  if(mobileNav){
+    mobileNav.id='primaryNavigation';
+    const button=document.createElement('button');button.type='button';button.id='mobileMenuToggle';button.className='mobile-menu-toggle';button.setAttribute('aria-controls','primaryNavigation');button.setAttribute('aria-expanded','false');button.textContent=tr('☰ Menu','☰ Menú');
+    mobileNav.before(button);
+    button.addEventListener('click',()=>{const open=mobileNav.classList.toggle('menu-open');button.setAttribute('aria-expanded',String(open));});
+    mobileNav.addEventListener('click',e=>{if(e.target.closest('a')){mobileNav.classList.remove('menu-open');button.setAttribute('aria-expanded','false');}});
+  }
+  const shop=document.querySelector('#shop');
+  const toolbar=shop?.querySelector('.toolbar');
+  const discovery=document.querySelector('.discovery-bar');
+  if(shop&&toolbar&&discovery){
+    const toggle=document.createElement('button');toggle.type='button';toggle.className='mobile-filter-toggle';toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-controls','mobileFilters');toggle.textContent=tr('Filter & sort ▾','Filtrar y ordenar ▾');
+    toolbar.before(toggle);
+    const panel=document.createElement('div');panel.id='mobileFilters';panel.className='mobile-filter-panel';
+    toolbar.parentNode.insertBefore(panel,toolbar);
+    panel.append(toolbar,discovery);
+    toggle.addEventListener('click',()=>{const open=panel.classList.toggle('filters-open');toggle.setAttribute('aria-expanded',String(open));});
+  }
+  // Occasion collections: match fragrance profiles instead of stereotyping by gender.
+  const occasions={day:['Fresh','Marine','Citrus'],night:['Amber','Vanilla','Woody','Spicy'],gift:[]};
+  document.querySelectorAll('[data-occasion]').forEach(a=>{
+    a.addEventListener('click',()=>{const tags=occasions[a.dataset.occasion]||[];category='All';familyFilter='';brandFilter='';budgetFilter='all';savedOnly=false;
+      document.querySelectorAll('[data-category]').forEach(b=>b.classList.toggle('active',b.dataset.category==='All'));
+      if(tags.length){const key=tags[0];familyFilter=key==='Marine'||key==='Citrus'?'Fresh':key==='Vanilla'||key==='Spicy'?'Amber':key;document.querySelector('#familyFilter').value=familyFilter;}
+      else {document.querySelector('#familyFilter').value='';}
+      renderProducts();
+    });
+  });
+  const finder=document.querySelector('#finder');
+  if(finder&&!document.querySelector('#fragranceQuiz')){
+    const quiz=document.createElement('section');quiz.id='fragranceQuiz';quiz.className='fragrance-quiz';
+    quiz.innerHTML='<p class="eyebrow">'+tr('PERSONAL SCENT FINDER','BUSCADOR PERSONAL')+'</p><h3>'+tr('Not sure where to start?','¿No sabes por dónde empezar?')+'</h3><p>'+tr('Choose the mood you want. We’ll show matching examples.','Elige tu estilo. Te mostraremos ejemplos afines.')+'</p><div class="quiz-options"><button type="button" data-quiz="Fresh">'+tr('Clean & fresh','Limpia y fresca')+'</button><button type="button" data-quiz="Floral">'+tr('Soft & floral','Suave y floral')+'</button><button type="button" data-quiz="Woody">'+tr('Warm & woody','Cálida y amaderada')+'</button><button type="button" data-quiz="Amber">'+tr('Bold & evening','Intensa y nocturna')+'</button></div>';
+    finder.after(quiz);
+    quiz.addEventListener('click',e=>{const b=e.target.closest('[data-quiz]');if(!b)return;familyFilter=b.dataset.quiz;document.querySelector('#familyFilter').value=familyFilter;category='All';document.querySelectorAll('[data-category]').forEach(x=>x.classList.toggle('active',x.dataset.category==='All'));renderProducts();location.hash='shop';});
+  }
+  // Re-render once to apply image-ready presentation; handle missing images safely.
+  renderProducts();
+})();
