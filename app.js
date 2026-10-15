@@ -7,7 +7,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Fresh · Spicy · Woody",
     "retail": 140,
-    "price": 98
+    "price": 105
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Aromatic · Woody",
     "retail": 160,
-    "price": 112
+    "price": 120
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Fruity · Smoky · Woody",
     "retail": 170,
-    "price": 118
+    "price": 127.5
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Fresh · Vanilla · Woody",
     "retail": 180,
-    "price": 125
+    "price": 135
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Marine · Citrus · Fresh",
     "retail": 200,
-    "price": 140
+    "price": 150
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Citrus · Woody · Amber",
     "retail": 210,
-    "price": 147
+    "price": 157.5
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Spicy · Woody · Amber",
     "retail": 220,
-    "price": 154
+    "price": 165
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Woody · Amber · Spicy",
     "retail": 240,
-    "price": 168
+    "price": 180
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Fresh · Aromatic · Woody",
     "retail": 250,
-    "price": 175
+    "price": 187.5
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Amber · Vanilla · Spicy",
     "retail": 260,
-    "price": 182
+    "price": 195
   },
   {
     "id": 11,
@@ -107,7 +107,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Spicy · Amber · Woody",
     "retail": 270,
-    "price": 189
+    "price": 202.5
   },
   {
     "id": 12,
@@ -117,7 +117,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Fresh · Marine · Woody",
     "retail": 290,
-    "price": 203
+    "price": 217.5
   },
   {
     "id": 13,
@@ -127,7 +127,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Citrus · Woody · Spicy",
     "retail": 300,
-    "price": 210
+    "price": 225
   },
   {
     "id": 14,
@@ -137,7 +137,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Amber · Spicy · Woody",
     "retail": 310,
-    "price": 217
+    "price": 232.5
   },
   {
     "id": 15,
@@ -147,7 +147,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Vanilla · Amber · Woody",
     "retail": 330,
-    "price": 230
+    "price": 247.5
   },
   {
     "id": 16,
@@ -157,7 +157,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Woody · Amber · Spicy",
     "retail": 340,
-    "price": 237
+    "price": 255
   },
   {
     "id": 17,
@@ -167,7 +167,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Spicy · Amber · Woody",
     "retail": 350,
-    "price": 244
+    "price": 262.5
   },
   {
     "id": 18,
@@ -177,7 +177,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Woody · Aromatic · Vanilla",
     "retail": 370,
-    "price": 259
+    "price": 277.5
   },
   {
     "id": 19,
@@ -187,7 +187,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Woody · Citrus · Amber",
     "retail": 380,
-    "price": 266
+    "price": 285
   },
   {
     "id": 20,
@@ -197,7 +197,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Woody · Spicy · Aromatic",
     "retail": 390,
-    "price": 273
+    "price": 292.5
   },
   {
     "id": 21,
@@ -207,7 +207,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Citrus · Floral · Amber",
     "retail": 150,
-    "price": 105
+    "price": 112.5
   },
   {
     "id": 22,
@@ -217,7 +217,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Coffee · Vanilla · Floral",
     "retail": 170,
-    "price": 118
+    "price": 127.5
   },
   {
     "id": 23,
@@ -227,7 +227,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Floral · Amber · Vanilla",
     "retail": 180,
-    "price": 125
+    "price": 135
   },
   {
     "id": 24,
@@ -237,7 +237,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Floral · Aldehydic · Woody",
     "retail": 190,
-    "price": 133
+    "price": 142.5
   },
   {
     "id": 25,
@@ -247,7 +247,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Floral · Rose · Woody",
     "retail": 210,
-    "price": 147
+    "price": 157.5
   },
   {
     "id": 26,
@@ -257,7 +257,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Sweet · Floral · Vanilla",
     "retail": 220,
-    "price": 154
+    "price": 165
   },
   {
     "id": 27,
@@ -267,7 +267,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Floral · Lavender · Vanilla",
     "retail": 230,
-    "price": 161
+    "price": 172.5
   },
   {
     "id": 28,
@@ -277,7 +277,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Floral · Amber · Sweet",
     "retail": 250,
-    "price": 175
+    "price": 187.5
   },
   {
     "id": 29,
@@ -287,7 +287,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Floral · Citrus · Vanilla",
     "retail": 260,
-    "price": 182
+    "price": 195
   },
   {
     "id": 30,
@@ -297,7 +297,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Floral · Sweet · Amber",
     "retail": 270,
-    "price": 189
+    "price": 202.5
   },
   {
     "id": 31,
@@ -307,7 +307,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Floral · White Floral · Green",
     "retail": 280,
-    "price": 196
+    "price": 210
   },
   {
     "id": 32,
@@ -317,7 +317,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Vanilla · Aromatic · Sweet",
     "retail": 300,
-    "price": 210
+    "price": 225
   },
   {
     "id": 33,
@@ -327,7 +327,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Floral · Amber · Citrus",
     "retail": 310,
-    "price": 217
+    "price": 232.5
   },
   {
     "id": 34,
@@ -337,7 +337,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Floral · Fresh · Fruity",
     "retail": 320,
-    "price": 224
+    "price": 240
   },
   {
     "id": 35,
@@ -347,7 +347,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Fresh · Citrus · Woody",
     "retail": 340,
-    "price": 237
+    "price": 255
   },
   {
     "id": 36,
@@ -357,7 +357,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Fresh · Floral · Fruity",
     "retail": 350,
-    "price": 244
+    "price": 262.5
   },
   {
     "id": 37,
@@ -367,7 +367,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Floral · Fruity · Musky",
     "retail": 360,
-    "price": 251
+    "price": 270
   },
   {
     "id": 38,
@@ -377,7 +377,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Amber · Floral · Spicy",
     "retail": 380,
-    "price": 266
+    "price": 285
   },
   {
     "id": 39,
@@ -387,7 +387,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Sweet · Floral · Vanilla",
     "retail": 390,
-    "price": 273
+    "price": 292.5
   },
   {
     "id": 40,
@@ -397,7 +397,7 @@ const inventory=[
     "size": "Example size: 100 mL",
     "notes": "Amber · Woody · Floral",
     "retail": 400,
-    "price": 280
+    "price": 300
   }
 ];
 const langText={en:{top:'100% AUTHENTIC DESIGNER FRAGRANCES · FREE U.S. SHIPPING',shop:'SHOP',men:'MEN',women:'WOMEN',promise:'OUR PROMISE',heroText:'The designer fragrances you love. 100% authentic. Always a smarter price.',cta:'SHOP THE COLLECTION ↗',authentic:'AUTHENTIC ORIGINALS',shipping:'FREE U.S. SHIPPING',price:'25%+ BELOW RETAIL*',introTitle:'Your signature scent. Not the department-store markup.',introText:'Discover coveted designer colognes and perfumes, sourced for authenticity and curated for your everyday. Huele Rico! is an independent multi-brand fragrance retailer—not a fragrance manufacturer.',catalogEyebrow:'THE EDIT',catalogTitle:'Find your next obsession.',demo:'DEMO CATALOG · SAMPLE PRICES ONLY',all:'ALL',unisex:'UNISEX',pricingDisclaimer:'*Prices shown are illustrative demo amounts, not verified current selling prices or department-store comparisons. Replace with actual inventory, truthful comparison prices and accurate genuine product photography before launch.',whyTitle:'The real deal. A better deal.',whyText:'Luxury should be about how you feel, not how much you spend. We believe in the original designer fragrance—never a knockoff—and clear prices that make sense.',learn:'GET TO KNOW US ↗',benefit1:'Authenticity first',benefit1Text:'Only original designer fragrances. Product provenance and fulfillment verification required before launch.',benefit2:'Prices worth talking about',benefit2Text:'Our goal is prices at least 25% below comparable department-store retail, shown transparently per item.',benefit3:'Your people. Your scent.',benefit3Text:'A bilingual shopping experience made for how we actually live, dress, give and celebrate.',newsletterTitle:'Good taste. Better drops.',newsletterText:'Get first access to launches, restocks and fragrance stories.',join:'JOIN THE LIST →',footerDesc:'An independent retailer of authentic designer fragrances.',help:'HELP',contact:'CONTACT US',important:'IMPORTANT',footerLegal:'Brand names belong to their respective owners. Huele Rico! is not affiliated with or endorsed by those brands. This demonstration storefront is not accepting payments.',bag:'YOUR CART',subtotal:'SUBTOTAL',checkoutNote:'Demo mode. Live checkout activates once a Shopify store and verified catalog are connected.',checkout:'CHECKOUT ↗'},es:{top:'FRAGANCIAS DE DISEÑADOR 100% ORIGINALES · ENVÍO GRATIS EN EE. UU.',shop:'COMPRAR',men:'HOMBRES',women:'MUJERES',promise:'NUESTRA PROMESA',heroText:'Tus perfumes y lociones favoritos, originales y a un mejor precio.',cta:'COMPRA LA COLECCIÓN ↗',authentic:'100% ORIGINALES',shipping:'ENVÍO GRATIS EN EE. UU.',price:'25%+ MENOS QUE EN TIENDAS*',introTitle:'Tu fragancia favorita. Sin pagar el precio de las grandes tiendas.',introText:'Descubre perfumes y lociones originales de las marcas que conoces. Huele Rico! es una tienda independiente que vende diferentes marcas de diseñador.',catalogEyebrow:'LA SELECCIÓN',catalogTitle:'Descubre tu próxima fragancia favorita.',demo:'CATÁLOGO DEMO · PRECIOS DE EJEMPLO',all:'TODOS',unisex:'UNISEX',pricingDisclaimer:'*Los precios son ejemplos para esta demostración. Antes del lanzamiento, se deben reemplazar con inventario real, precios de referencia comprobables y fotos auténticas de cada producto.',whyTitle:'Lo original. A mejor precio.',whyText:'El lujo se siente, no tiene que costar de más. Perfumes y lociones de diseñador auténticos, sin imitaciones ni precios confusos.',learn:'CONOCE MÁS ↗',benefit1:'Autenticidad ante todo',benefit1Text:'Solo fragancias originales de diseñador. Verificaremos la procedencia antes de venderlas.',benefit2:'Precios que valen la pena',benefit2Text:'Nuestra meta: por lo menos 25% menos que el precio comparable en tiendas departamentales, con información clara.',benefit3:'Tu gente. Tu fragancia.',benefit3Text:'Una experiencia bilingüe para nuestra manera de vestir, celebrar y regalar.',newsletterTitle:'Buen gusto. Mejores ofertas.',newsletterText:'Entérate primero de lanzamientos y novedades.',join:'QUIERO RECIBIR NOVEDADES →',footerDesc:'Tienda independiente de fragancias originales de diseñador.',help:'AYUDA',contact:'CONTÁCTANOS',important:'IMPORTANTE',footerLegal:'Las marcas pertenecen a sus respectivos dueños. Huele Rico! no está afiliada ni respaldada por esas marcas. Esta demostración no acepta pagos.',bag:'TU CARRITO',subtotal:'SUBTOTAL',checkoutNote:'Modo demostración. El pago estará disponible cuando se conecte Shopify y el inventario real.',checkout:'PAGAR ↗'}};
@@ -406,7 +406,7 @@ const $=s=>document.querySelector(s),money=n=>new Intl.NumberFormat(language==='
 function setLanguage(){document.documentElement.lang=language;$('#langLabel').textContent=language.toUpperCase();document.querySelectorAll('[data-i18n]').forEach(e=>{const t=langText[language][e.dataset.i18n];if(t)e.textContent=t});$('#search').placeholder=language==='es'?'Buscar marca o fragancia...':'Search brand or fragrance...';localStorage.setItem('huele-lang',language);renderProducts();renderCart()}
 function filtered(){const q=$('#search').value.toLowerCase().trim();let p=inventory.filter(x=>(category==='All'||x.type===category)&&(x.brand+' '+x.name).toLowerCase().includes(q)&&(!savedOnly||favorites.includes(x.id)));p=p.filter(x=>(!brandFilter||x.brand===brandFilter)&&(!familyFilter||x.notes.toLowerCase().includes(familyFilter.toLowerCase()))&&(budgetFilter==='all'||(budgetFilter==='under100'&&x.price<100)||(budgetFilter==='100to150'&&x.price>=100&&x.price<=150)||(budgetFilter==='over150'&&x.price>150)));const s=$('#sort').value;if(s==='priceAsc')p.sort((a,b)=>a.price-b.price);if(s==='priceDesc')p.sort((a,b)=>b.price-a.price);if(s==='saving')p.sort((a,b)=>(b.retail-b.price)/b.retail-(a.retail-a.price)/a.retail);return p}
 function visual(p){return '<div class="product-visual product-visual--editorial"><span class="preview-pill">'+(language==='es'?'CATÁLOGO DE MUESTRA':'DEMO CATALOG')+'</span><span class="product-brand-visual">'+p.brand+'</span><span class="product-art-name">'+p.name+'</span><span class="product-art-notes">'+p.notes+'</span><span class="visual-disclaimer">'+(language==='es'?'SIN FOTO REAL DEL PRODUCTO':'PRODUCT PHOTOGRAPHY COMING SOON')+'</span></div>'}
-function renderProducts(){const count=document.querySelector('#savedCount');if(count)count.textContent=favorites.length;const list=filtered();const result=document.querySelector('#productCount');if(result)result.textContent=language==='es'?list.length+' fragancias de muestra':list.length+' sample fragrances';$('#products').innerHTML=list.map(p=>'<article class="product"><a class="product-image-link" href="./product.html?id='+p.id+'" aria-label="'+p.name+'">'+visual(p)+'</a><button class="wishlist-button" data-favorite="'+p.id+'" aria-label="'+(language==='es'?'Guardar fragancia':'Save fragrance')+'" aria-pressed="'+favorites.includes(p.id)+'">'+(favorites.includes(p.id)?'♥':'♡')+'</button><div class="product-copy"><p class="product-brand">'+p.brand+'</p><a class="product-title" href="./product.html?id='+p.id+'">'+p.name+'</a><div class="product-meta">'+p.size+' · '+p.type+'</div><p class="product-scent-profile">'+p.notes+'</p><p class="product-demo-price">'+(language==='es'?'Precio de muestra: ':'Illustrative price: ')+money(p.price)+'</p><div class="product-ctas"><a class="quick-inline" href="./product.html?id='+p.id+'">'+(language==='es'?'VER DETALLES →':'VIEW DETAILS →')+'</a><button class="quick-inline" data-detail="'+p.id+'">'+(language==='es'?'VISTA RÁPIDA':'QUICK VIEW')+'</button></div></div></article>').join('')||'<p class="empty">'+(language==='es'?'No hay resultados. Prueba otros filtros.':'No matching fragrances. Try clearing the filters.')+'</p>'}
+function renderProducts(){const count=document.querySelector('#savedCount');if(count)count.textContent=favorites.length;const list=filtered();const result=document.querySelector('#productCount');if(result)result.textContent=language==='es'?list.length+' fragancias de muestra':list.length+' sample fragrances';$('#products').innerHTML=list.map(p=>'<article class="product"><a class="product-image-link" href="./product.html?id='+p.id+'" aria-label="'+p.name+'">'+visual(p)+'</a><button class="wishlist-button" data-favorite="'+p.id+'" aria-label="'+(language==='es'?'Guardar fragancia':'Save fragrance')+'" aria-pressed="'+favorites.includes(p.id)+'">'+(favorites.includes(p.id)?'♥':'♡')+'</button><div class="product-copy"><p class="product-brand">'+p.brand+'</p><a class="product-title" href="./product.html?id='+p.id+'">'+p.name+'</a><div class="product-meta">'+p.size+' · '+p.type+'</div><p class="product-scent-profile">'+p.notes+'</p><div class="product-price-row" aria-label="'+(language==='es'?'Precio original de ejemplo '+money(p.retail)+', precio de muestra con 25 por ciento de descuento '+money(p.price):'Sample original price '+money(p.retail)+', sample sale price 25 percent off '+money(p.price))+'"><s class="product-original-price">'+money(p.retail)+'</s><strong class="product-sale-price">'+money(p.price)+'</strong><span class="product-sale-badge">25% OFF</span></div><div class="product-ctas"><a class="quick-inline" href="./product.html?id='+p.id+'">'+(language==='es'?'VER DETALLES →':'VIEW DETAILS →')+'</a><button class="quick-inline" data-detail="'+p.id+'">'+(language==='es'?'VISTA RÁPIDA':'QUICK VIEW')+'</button></div></div></article>').join('')||'<p class="empty">'+(language==='es'?'No hay resultados. Prueba otros filtros.':'No matching fragrances. Try clearing the filters.')+'</p>'}
 
 function persist(){localStorage.setItem('huele-cart',JSON.stringify(cart));renderCart()}
 function add(id){cart[id]=(cart[id]||0)+1;persist();openCart();window.HueleAnalytics?.track('add_to_cart',{currency:'USD',value:inventory.find(p=>p.id===id).price,items:[{item_id:String(id),item_name:inventory.find(p=>p.id===id).name,item_brand:inventory.find(p=>p.id===id).brand,price:inventory.find(p=>p.id===id).price,quantity:1}]})}
