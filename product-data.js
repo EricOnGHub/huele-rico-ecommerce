@@ -6,7 +6,9 @@ window.HUELE_PRODUCTS=[
     "name": "Sauvage Eau de Toilette",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Fresh · Spicy · Woody"
+    "notes": "Fresh · Spicy · Woody",
+    "retail": 140,
+    "price": 105
   },
   {
     "id": 2,
@@ -14,7 +16,9 @@ window.HUELE_PRODUCTS=[
     "name": "Y Eau de Parfum",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Aromatic · Woody"
+    "notes": "Aromatic · Woody",
+    "retail": 160,
+    "price": 120
   },
   {
     "id": 3,
@@ -22,7 +26,9 @@ window.HUELE_PRODUCTS=[
     "name": "Aventus Eau de Parfum",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Fruity · Smoky · Woody"
+    "notes": "Fruity · Smoky · Woody",
+    "retail": 170,
+    "price": 127.5
   },
   {
     "id": 4,
@@ -30,7 +36,9 @@ window.HUELE_PRODUCTS=[
     "name": "Eros Eau de Toilette",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Fresh · Vanilla · Woody"
+    "notes": "Fresh · Vanilla · Woody",
+    "retail": 180,
+    "price": 135
   },
   {
     "id": 5,
@@ -38,7 +46,9 @@ window.HUELE_PRODUCTS=[
     "name": "Acqua di Giò Eau de Toilette",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Marine · Citrus · Fresh"
+    "notes": "Marine · Citrus · Fresh",
+    "retail": 200,
+    "price": 150
   },
   {
     "id": 6,
@@ -46,7 +56,9 @@ window.HUELE_PRODUCTS=[
     "name": "Bleu de Chanel Eau de Parfum",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Citrus · Woody · Amber"
+    "notes": "Citrus · Woody · Amber",
+    "retail": 210,
+    "price": 157.5
   },
   {
     "id": 7,
@@ -54,7 +66,9 @@ window.HUELE_PRODUCTS=[
     "name": "Sauvage Elixir",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Spicy · Woody · Amber"
+    "notes": "Spicy · Woody · Amber",
+    "retail": 220,
+    "price": 165
   },
   {
     "id": 8,
@@ -62,7 +76,9 @@ window.HUELE_PRODUCTS=[
     "name": "Oud Wood Eau de Parfum",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Woody · Amber · Spicy"
+    "notes": "Woody · Amber · Spicy",
+    "retail": 240,
+    "price": 180
   },
   {
     "id": 9,
@@ -70,7 +86,9 @@ window.HUELE_PRODUCTS=[
     "name": "Luna Rossa Carbon Eau de Toilette",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Fresh · Aromatic · Woody"
+    "notes": "Fresh · Aromatic · Woody",
+    "retail": 250,
+    "price": 187.5
   },
   {
     "id": 10,
@@ -78,7 +96,9 @@ window.HUELE_PRODUCTS=[
     "name": "Le Male Le Parfum",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Amber · Vanilla · Spicy"
+    "notes": "Amber · Vanilla · Spicy",
+    "retail": 260,
+    "price": 195
   },
   {
     "id": 11,
@@ -86,7 +106,9 @@ window.HUELE_PRODUCTS=[
     "name": "1 Million Eau de Toilette",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Spicy · Amber · Woody"
+    "notes": "Spicy · Amber · Woody",
+    "retail": 270,
+    "price": 202.5
   },
   {
     "id": 12,
@@ -94,7 +116,9 @@ window.HUELE_PRODUCTS=[
     "name": "Invictus Eau de Toilette",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Fresh · Marine · Woody"
+    "notes": "Fresh · Marine · Woody",
+    "retail": 290,
+    "price": 217.5
   },
   {
     "id": 13,
@@ -102,7 +126,9 @@ window.HUELE_PRODUCTS=[
     "name": "Terre d’Hermès Eau de Toilette",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Citrus · Woody · Spicy"
+    "notes": "Citrus · Woody · Spicy",
+    "retail": 300,
+    "price": 225
   },
   {
     "id": 14,
@@ -110,7 +136,9 @@ window.HUELE_PRODUCTS=[
     "name": "The One for Men Eau de Parfum",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Amber · Spicy · Woody"
+    "notes": "Amber · Spicy · Woody",
+    "retail": 310,
+    "price": 232.5
   },
   {
     "id": 15,
@@ -118,7 +146,9 @@ window.HUELE_PRODUCTS=[
     "name": "Uomo Born in Roma Intense",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Vanilla · Amber · Woody"
+    "notes": "Vanilla · Amber · Woody",
+    "retail": 330,
+    "price": 247.5
   },
   {
     "id": 16,
@@ -126,7 +156,9 @@ window.HUELE_PRODUCTS=[
     "name": "Hero Eau de Parfum",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Woody · Amber · Spicy"
+    "notes": "Woody · Amber · Spicy",
+    "retail": 340,
+    "price": 255
   },
   {
     "id": 17,
@@ -134,7 +166,9 @@ window.HUELE_PRODUCTS=[
     "name": "The Most Wanted Eau de Parfum Intense",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Spicy · Amber · Woody"
+    "notes": "Spicy · Amber · Woody",
+    "retail": 350,
+    "price": 262.5
   },
   {
     "id": 18,
@@ -142,7 +176,9 @@ window.HUELE_PRODUCTS=[
     "name": "Gentleman Society Eau de Parfum",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Woody · Aromatic · Vanilla"
+    "notes": "Woody · Aromatic · Vanilla",
+    "retail": 370,
+    "price": 277.5
   },
   {
     "id": 19,
@@ -150,7 +186,9 @@ window.HUELE_PRODUCTS=[
     "name": "Explorer Eau de Parfum",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Woody · Citrus · Amber"
+    "notes": "Woody · Citrus · Amber",
+    "retail": 380,
+    "price": 285
   },
   {
     "id": 20,
@@ -158,7 +196,9 @@ window.HUELE_PRODUCTS=[
     "name": "Guilty Pour Homme Eau de Parfum",
     "type": "Men",
     "size": "Example size: 100 mL",
-    "notes": "Woody · Spicy · Aromatic"
+    "notes": "Woody · Spicy · Aromatic",
+    "retail": 390,
+    "price": 292.5
   },
   {
     "id": 21,
@@ -166,7 +206,9 @@ window.HUELE_PRODUCTS=[
     "name": "Coco Mademoiselle Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Citrus · Floral · Amber"
+    "notes": "Citrus · Floral · Amber",
+    "retail": 150,
+    "price": 112.5
   },
   {
     "id": 22,
@@ -174,7 +216,9 @@ window.HUELE_PRODUCTS=[
     "name": "Black Opium Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Coffee · Vanilla · Floral"
+    "notes": "Coffee · Vanilla · Floral",
+    "retail": 170,
+    "price": 127.5
   },
   {
     "id": 23,
@@ -182,7 +226,9 @@ window.HUELE_PRODUCTS=[
     "name": "Donna Born in Roma Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Floral · Amber · Vanilla"
+    "notes": "Floral · Amber · Vanilla",
+    "retail": 180,
+    "price": 135
   },
   {
     "id": 24,
@@ -190,7 +236,9 @@ window.HUELE_PRODUCTS=[
     "name": "N°5 Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Floral · Aldehydic · Woody"
+    "notes": "Floral · Aldehydic · Woody",
+    "retail": 190,
+    "price": 142.5
   },
   {
     "id": 25,
@@ -198,7 +246,9 @@ window.HUELE_PRODUCTS=[
     "name": "Miss Dior Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Floral · Rose · Woody"
+    "notes": "Floral · Rose · Woody",
+    "retail": 210,
+    "price": 157.5
   },
   {
     "id": 26,
@@ -206,7 +256,9 @@ window.HUELE_PRODUCTS=[
     "name": "La Vie Est Belle Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Sweet · Floral · Vanilla"
+    "notes": "Sweet · Floral · Vanilla",
+    "retail": 220,
+    "price": 165
   },
   {
     "id": 27,
@@ -214,7 +266,9 @@ window.HUELE_PRODUCTS=[
     "name": "Libre Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Floral · Lavender · Vanilla"
+    "notes": "Floral · Lavender · Vanilla",
+    "retail": 230,
+    "price": 172.5
   },
   {
     "id": 28,
@@ -222,7 +276,9 @@ window.HUELE_PRODUCTS=[
     "name": "Good Girl Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Floral · Amber · Sweet"
+    "notes": "Floral · Amber · Sweet",
+    "retail": 250,
+    "price": 187.5
   },
   {
     "id": 29,
@@ -230,7 +286,9 @@ window.HUELE_PRODUCTS=[
     "name": "My Way Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Floral · Citrus · Vanilla"
+    "notes": "Floral · Citrus · Vanilla",
+    "retail": 260,
+    "price": 195
   },
   {
     "id": 30,
@@ -238,7 +296,9 @@ window.HUELE_PRODUCTS=[
     "name": "Flowerbomb Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Floral · Sweet · Amber"
+    "notes": "Floral · Sweet · Amber",
+    "retail": 270,
+    "price": 202.5
   },
   {
     "id": 31,
@@ -246,7 +306,9 @@ window.HUELE_PRODUCTS=[
     "name": "Bloom Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Floral · White Floral · Green"
+    "notes": "Floral · White Floral · Green",
+    "retail": 280,
+    "price": 210
   },
   {
     "id": 32,
@@ -254,7 +316,9 @@ window.HUELE_PRODUCTS=[
     "name": "Goddess Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Vanilla · Aromatic · Sweet"
+    "notes": "Vanilla · Aromatic · Sweet",
+    "retail": 300,
+    "price": 225
   },
   {
     "id": 33,
@@ -262,7 +326,9 @@ window.HUELE_PRODUCTS=[
     "name": "Paradoxe Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Floral · Amber · Citrus"
+    "notes": "Floral · Amber · Citrus",
+    "retail": 310,
+    "price": 232.5
   },
   {
     "id": 34,
@@ -270,7 +336,9 @@ window.HUELE_PRODUCTS=[
     "name": "Daisy Eau de Toilette",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Floral · Fresh · Fruity"
+    "notes": "Floral · Fresh · Fruity",
+    "retail": 320,
+    "price": 240
   },
   {
     "id": 35,
@@ -278,7 +346,9 @@ window.HUELE_PRODUCTS=[
     "name": "Light Blue Eau de Toilette",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Fresh · Citrus · Woody"
+    "notes": "Fresh · Citrus · Woody",
+    "retail": 340,
+    "price": 255
   },
   {
     "id": 36,
@@ -286,7 +356,9 @@ window.HUELE_PRODUCTS=[
     "name": "Bright Crystal Eau de Toilette",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Fresh · Floral · Fruity"
+    "notes": "Fresh · Floral · Fruity",
+    "retail": 350,
+    "price": 262.5
   },
   {
     "id": 37,
@@ -294,7 +366,9 @@ window.HUELE_PRODUCTS=[
     "name": "Chance Eau Tendre Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Floral · Fruity · Musky"
+    "notes": "Floral · Fruity · Musky",
+    "retail": 360,
+    "price": 270
   },
   {
     "id": 38,
@@ -302,7 +376,9 @@ window.HUELE_PRODUCTS=[
     "name": "Black Orchid Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Amber · Floral · Spicy"
+    "notes": "Amber · Floral · Spicy",
+    "retail": 380,
+    "price": 285
   },
   {
     "id": 39,
@@ -310,7 +386,9 @@ window.HUELE_PRODUCTS=[
     "name": "Love, Don't Be Shy Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Sweet · Floral · Vanilla"
+    "notes": "Sweet · Floral · Vanilla",
+    "retail": 390,
+    "price": 292.5
   },
   {
     "id": 40,
@@ -318,6 +396,8 @@ window.HUELE_PRODUCTS=[
     "name": "Baccarat Rouge 540 Eau de Parfum",
     "type": "Women",
     "size": "Example size: 100 mL",
-    "notes": "Amber · Woody · Floral"
+    "notes": "Amber · Woody · Floral",
+    "retail": 400,
+    "price": 300
   }
 ];
