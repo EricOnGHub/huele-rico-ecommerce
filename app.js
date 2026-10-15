@@ -1,12 +1,404 @@
 const inventory=[
-{id:1,brand:'DIOR',name:'Sauvage Eau de Toilette',type:'Men',size:'100 mL',price:112,retail:150,notes:'Fresh · Spicy · Woody'},
-{id:2,brand:'YVES SAINT LAURENT',name:'Y Eau de Parfum',type:'Men',size:'100 mL',price:115,retail:160,notes:'Aromatic · Woody'},
-{id:3,brand:'CREED',name:'Aventus Eau de Parfum',type:'Unisex',size:'100 mL',price:298,retail:410,notes:'Fruity · Smoky · Woody'},
-{id:4,brand:'CHANEL',name:'Coco Mademoiselle Eau de Parfum',type:'Women',size:'100 mL',price:148,retail:200,notes:'Citrus · Floral'},
-{id:5,brand:'VERSACE',name:'Eros Eau de Toilette',type:'Men',size:'100 mL',price:98,retail:130,notes:'Fresh · Vanilla · Woody'},
-{id:6,brand:'YVES SAINT LAURENT',name:'Black Opium Eau de Parfum',type:'Women',size:'90 mL',price:115,retail:158,notes:'Coffee · Vanilla · Floral'},
-{id:7,brand:'ARMANI',name:'Acqua di Giò Eau de Toilette',type:'Men',size:'100 mL',price:86,retail:120,notes:'Marine · Citrus'},
-{id:8,brand:'VALENTINO',name:'Donna Born in Roma Eau de Parfum',type:'Women',size:'100 mL',price:124,retail:170,notes:'Floral · Amber'}
+  {
+    "id": 1,
+    "brand": "DIOR",
+    "name": "Sauvage Eau de Toilette",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Fresh · Spicy · Woody",
+    "retail": 140,
+    "price": 98
+  },
+  {
+    "id": 2,
+    "brand": "YVES SAINT LAURENT",
+    "name": "Y Eau de Parfum",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Aromatic · Woody",
+    "retail": 160,
+    "price": 112
+  },
+  {
+    "id": 3,
+    "brand": "CREED",
+    "name": "Aventus Eau de Parfum",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Fruity · Smoky · Woody",
+    "retail": 170,
+    "price": 118
+  },
+  {
+    "id": 4,
+    "brand": "VERSACE",
+    "name": "Eros Eau de Toilette",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Fresh · Vanilla · Woody",
+    "retail": 180,
+    "price": 125
+  },
+  {
+    "id": 5,
+    "brand": "ARMANI",
+    "name": "Acqua di Giò Eau de Toilette",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Marine · Citrus · Fresh",
+    "retail": 200,
+    "price": 140
+  },
+  {
+    "id": 6,
+    "brand": "CHANEL",
+    "name": "Bleu de Chanel Eau de Parfum",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Citrus · Woody · Amber",
+    "retail": 210,
+    "price": 147
+  },
+  {
+    "id": 7,
+    "brand": "DIOR",
+    "name": "Sauvage Elixir",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Spicy · Woody · Amber",
+    "retail": 220,
+    "price": 154
+  },
+  {
+    "id": 8,
+    "brand": "TOM FORD",
+    "name": "Oud Wood Eau de Parfum",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Woody · Amber · Spicy",
+    "retail": 240,
+    "price": 168
+  },
+  {
+    "id": 9,
+    "brand": "PRADA",
+    "name": "Luna Rossa Carbon Eau de Toilette",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Fresh · Aromatic · Woody",
+    "retail": 250,
+    "price": 175
+  },
+  {
+    "id": 10,
+    "brand": "JEAN PAUL GAULTIER",
+    "name": "Le Male Le Parfum",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Amber · Vanilla · Spicy",
+    "retail": 260,
+    "price": 182
+  },
+  {
+    "id": 11,
+    "brand": "PACO RABANNE",
+    "name": "1 Million Eau de Toilette",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Spicy · Amber · Woody",
+    "retail": 270,
+    "price": 189
+  },
+  {
+    "id": 12,
+    "brand": "PACO RABANNE",
+    "name": "Invictus Eau de Toilette",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Fresh · Marine · Woody",
+    "retail": 290,
+    "price": 203
+  },
+  {
+    "id": 13,
+    "brand": "HERMÈS",
+    "name": "Terre d’Hermès Eau de Toilette",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Citrus · Woody · Spicy",
+    "retail": 300,
+    "price": 210
+  },
+  {
+    "id": 14,
+    "brand": "DOLCE & GABBANA",
+    "name": "The One for Men Eau de Parfum",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Amber · Spicy · Woody",
+    "retail": 310,
+    "price": 217
+  },
+  {
+    "id": 15,
+    "brand": "VALENTINO",
+    "name": "Uomo Born in Roma Intense",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Vanilla · Amber · Woody",
+    "retail": 330,
+    "price": 230
+  },
+  {
+    "id": 16,
+    "brand": "BURBERRY",
+    "name": "Hero Eau de Parfum",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Woody · Amber · Spicy",
+    "retail": 340,
+    "price": 237
+  },
+  {
+    "id": 17,
+    "brand": "AZZARO",
+    "name": "The Most Wanted Eau de Parfum Intense",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Spicy · Amber · Woody",
+    "retail": 350,
+    "price": 244
+  },
+  {
+    "id": 18,
+    "brand": "GIVENCHY",
+    "name": "Gentleman Society Eau de Parfum",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Woody · Aromatic · Vanilla",
+    "retail": 370,
+    "price": 259
+  },
+  {
+    "id": 19,
+    "brand": "MONTBLANC",
+    "name": "Explorer Eau de Parfum",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Woody · Citrus · Amber",
+    "retail": 380,
+    "price": 266
+  },
+  {
+    "id": 20,
+    "brand": "GUCCI",
+    "name": "Guilty Pour Homme Eau de Parfum",
+    "type": "Men",
+    "size": "Example size: 100 mL",
+    "notes": "Woody · Spicy · Aromatic",
+    "retail": 390,
+    "price": 273
+  },
+  {
+    "id": 21,
+    "brand": "CHANEL",
+    "name": "Coco Mademoiselle Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Citrus · Floral · Amber",
+    "retail": 150,
+    "price": 105
+  },
+  {
+    "id": 22,
+    "brand": "YVES SAINT LAURENT",
+    "name": "Black Opium Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Coffee · Vanilla · Floral",
+    "retail": 170,
+    "price": 118
+  },
+  {
+    "id": 23,
+    "brand": "VALENTINO",
+    "name": "Donna Born in Roma Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Floral · Amber · Vanilla",
+    "retail": 180,
+    "price": 125
+  },
+  {
+    "id": 24,
+    "brand": "CHANEL",
+    "name": "N°5 Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Floral · Aldehydic · Woody",
+    "retail": 190,
+    "price": 133
+  },
+  {
+    "id": 25,
+    "brand": "DIOR",
+    "name": "Miss Dior Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Floral · Rose · Woody",
+    "retail": 210,
+    "price": 147
+  },
+  {
+    "id": 26,
+    "brand": "LANCÔME",
+    "name": "La Vie Est Belle Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Sweet · Floral · Vanilla",
+    "retail": 220,
+    "price": 154
+  },
+  {
+    "id": 27,
+    "brand": "YVES SAINT LAURENT",
+    "name": "Libre Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Floral · Lavender · Vanilla",
+    "retail": 230,
+    "price": 161
+  },
+  {
+    "id": 28,
+    "brand": "CAROLINA HERRERA",
+    "name": "Good Girl Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Floral · Amber · Sweet",
+    "retail": 250,
+    "price": 175
+  },
+  {
+    "id": 29,
+    "brand": "GIORGIO ARMANI",
+    "name": "My Way Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Floral · Citrus · Vanilla",
+    "retail": 260,
+    "price": 182
+  },
+  {
+    "id": 30,
+    "brand": "VIKTOR & ROLF",
+    "name": "Flowerbomb Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Floral · Sweet · Amber",
+    "retail": 270,
+    "price": 189
+  },
+  {
+    "id": 31,
+    "brand": "GUCCI",
+    "name": "Bloom Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Floral · White Floral · Green",
+    "retail": 280,
+    "price": 196
+  },
+  {
+    "id": 32,
+    "brand": "BURBERRY",
+    "name": "Goddess Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Vanilla · Aromatic · Sweet",
+    "retail": 300,
+    "price": 210
+  },
+  {
+    "id": 33,
+    "brand": "PRADA",
+    "name": "Paradoxe Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Floral · Amber · Citrus",
+    "retail": 310,
+    "price": 217
+  },
+  {
+    "id": 34,
+    "brand": "MARC JACOBS",
+    "name": "Daisy Eau de Toilette",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Floral · Fresh · Fruity",
+    "retail": 320,
+    "price": 224
+  },
+  {
+    "id": 35,
+    "brand": "DOLCE & GABBANA",
+    "name": "Light Blue Eau de Toilette",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Fresh · Citrus · Woody",
+    "retail": 340,
+    "price": 237
+  },
+  {
+    "id": 36,
+    "brand": "VERSACE",
+    "name": "Bright Crystal Eau de Toilette",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Fresh · Floral · Fruity",
+    "retail": 350,
+    "price": 244
+  },
+  {
+    "id": 37,
+    "brand": "CHANEL",
+    "name": "Chance Eau Tendre Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Floral · Fruity · Musky",
+    "retail": 360,
+    "price": 251
+  },
+  {
+    "id": 38,
+    "brand": "TOM FORD",
+    "name": "Black Orchid Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Amber · Floral · Spicy",
+    "retail": 380,
+    "price": 266
+  },
+  {
+    "id": 39,
+    "brand": "KILIAN",
+    "name": "Love, Don't Be Shy Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Sweet · Floral · Vanilla",
+    "retail": 390,
+    "price": 273
+  },
+  {
+    "id": 40,
+    "brand": "MAISON FRANCIS KURKDJIAN",
+    "name": "Baccarat Rouge 540 Eau de Parfum",
+    "type": "Women",
+    "size": "Example size: 100 mL",
+    "notes": "Amber · Woody · Floral",
+    "retail": 400,
+    "price": 280
+  }
 ];
 const langText={en:{top:'100% AUTHENTIC DESIGNER FRAGRANCES · FREE U.S. SHIPPING',shop:'SHOP',men:'MEN',women:'WOMEN',promise:'OUR PROMISE',heroText:'The designer fragrances you love. 100% authentic. Always a smarter price.',cta:'SHOP THE COLLECTION ↗',authentic:'AUTHENTIC ORIGINALS',shipping:'FREE U.S. SHIPPING',price:'25%+ BELOW RETAIL*',introTitle:'Your signature scent. Not the department-store markup.',introText:'Discover coveted designer colognes and perfumes, sourced for authenticity and curated for your everyday. Huele Rico! is an independent multi-brand fragrance retailer—not a fragrance manufacturer.',catalogEyebrow:'THE EDIT',catalogTitle:'Find your next obsession.',demo:'DEMO CATALOG · SAMPLE PRICES ONLY',all:'ALL',unisex:'UNISEX',pricingDisclaimer:'*Prices shown are illustrative demo amounts, not verified current selling prices or department-store comparisons. Replace with actual inventory, truthful comparison prices and accurate genuine product photography before launch.',whyTitle:'The real deal. A better deal.',whyText:'Luxury should be about how you feel, not how much you spend. We believe in the original designer fragrance—never a knockoff—and clear prices that make sense.',learn:'GET TO KNOW US ↗',benefit1:'Authenticity first',benefit1Text:'Only original designer fragrances. Product provenance and fulfillment verification required before launch.',benefit2:'Prices worth talking about',benefit2Text:'Our goal is prices at least 25% below comparable department-store retail, shown transparently per item.',benefit3:'Your people. Your scent.',benefit3Text:'A bilingual shopping experience made for how we actually live, dress, give and celebrate.',newsletterTitle:'Good taste. Better drops.',newsletterText:'Get first access to launches, restocks and fragrance stories.',join:'JOIN THE LIST →',footerDesc:'An independent retailer of authentic designer fragrances.',help:'HELP',contact:'CONTACT US',important:'IMPORTANT',footerLegal:'Brand names belong to their respective owners. Huele Rico! is not affiliated with or endorsed by those brands. This demonstration storefront is not accepting payments.',bag:'YOUR CART',subtotal:'SUBTOTAL',checkoutNote:'Demo mode. Live checkout activates once a Shopify store and verified catalog are connected.',checkout:'CHECKOUT ↗'},es:{top:'FRAGANCIAS DE DISEÑADOR 100% ORIGINALES · ENVÍO GRATIS EN EE. UU.',shop:'COMPRAR',men:'HOMBRES',women:'MUJERES',promise:'NUESTRA PROMESA',heroText:'Tus perfumes y lociones favoritos, originales y a un mejor precio.',cta:'COMPRA LA COLECCIÓN ↗',authentic:'100% ORIGINALES',shipping:'ENVÍO GRATIS EN EE. UU.',price:'25%+ MENOS QUE EN TIENDAS*',introTitle:'Tu fragancia favorita. Sin pagar el precio de las grandes tiendas.',introText:'Descubre perfumes y lociones originales de las marcas que conoces. Huele Rico! es una tienda independiente que vende diferentes marcas de diseñador.',catalogEyebrow:'LA SELECCIÓN',catalogTitle:'Descubre tu próxima fragancia favorita.',demo:'CATÁLOGO DEMO · PRECIOS DE EJEMPLO',all:'TODOS',unisex:'UNISEX',pricingDisclaimer:'*Los precios son ejemplos para esta demostración. Antes del lanzamiento, se deben reemplazar con inventario real, precios de referencia comprobables y fotos auténticas de cada producto.',whyTitle:'Lo original. A mejor precio.',whyText:'El lujo se siente, no tiene que costar de más. Perfumes y lociones de diseñador auténticos, sin imitaciones ni precios confusos.',learn:'CONOCE MÁS ↗',benefit1:'Autenticidad ante todo',benefit1Text:'Solo fragancias originales de diseñador. Verificaremos la procedencia antes de venderlas.',benefit2:'Precios que valen la pena',benefit2Text:'Nuestra meta: por lo menos 25% menos que el precio comparable en tiendas departamentales, con información clara.',benefit3:'Tu gente. Tu fragancia.',benefit3Text:'Una experiencia bilingüe para nuestra manera de vestir, celebrar y regalar.',newsletterTitle:'Buen gusto. Mejores ofertas.',newsletterText:'Entérate primero de lanzamientos y novedades.',join:'QUIERO RECIBIR NOVEDADES →',footerDesc:'Tienda independiente de fragancias originales de diseñador.',help:'AYUDA',contact:'CONTÁCTANOS',important:'IMPORTANTE',footerLegal:'Las marcas pertenecen a sus respectivos dueños. Huele Rico! no está afiliada ni respaldada por esas marcas. Esta demostración no acepta pagos.',bag:'TU CARRITO',subtotal:'SUBTOTAL',checkoutNote:'Modo demostración. El pago estará disponible cuando se conecte Shopify y el inventario real.',checkout:'PAGAR ↗'}};
 let language=localStorage.getItem('huele-lang')==='es'?'es':'en',category='All',cart=JSON.parse(localStorage.getItem('huele-cart')||'{}');let favorites=JSON.parse(localStorage.getItem('huele-favorites')||'[]');let savedOnly=false;let familyFilter='',brandFilter='',budgetFilter='all';
