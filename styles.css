@@ -2,3 +2,7 @@
 /* Temporarily use a clean brand-gradient fallback: previous embedded JPEG asset was corrupt. */
 .hero-art{background-image:radial-gradient(circle at 75% 30%,rgba(229,189,137,.3),transparent 50%),linear-gradient(115deg,#1b101f 4%,#452742 58%,#8c6275 100%);background-position:center;background-size:cover}
 .manifesto-image{background-image:radial-gradient(circle at 65% 30%,#956582,#42213e 75%);background-size:cover}
+
+/* Campaign photography assets: upload the optimized WebP files to assets/lifestyle/. */
+.hero-art{background-image:linear-gradient(90deg,rgba(22,12,24,.91),rgba(22,12,24,.67) 46%,rgba(22,12,24,.13)),url("./assets/lifestyle/hero-group.webp");background-position:center,center;background-size:cover;background-color:#3c253d}
+.manifesto-image{background-image:linear-gradient(rgba(32,17,35,.15),rgba(32,17,35,.3)),url("./assets/lifestyle/community-group.webp");background-position:center;background-size:cover;background-color:#52344f}
