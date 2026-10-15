@@ -8,3 +8,65 @@
 .manifesto-image{background-image:linear-gradient(rgba(32,17,35,.15),rgba(32,17,35,.3)),url("./assets/lifestyle/community-group.webp");background-position:center;background-size:cover;background-color:#52344f}
 
 .lifestyle-gallery{padding-top:78px;padding-bottom:20px}.lifestyle-intro{text-align:center;margin-bottom:32px}.lifestyle-intro h2{font:500 clamp(32px,4vw,52px)/1.2 var(--serif);margin:0}.lifestyle-intro>p:last-child{color:#8e6b46}.lifestyle-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}.lifestyle-cards figure{margin:0;background:#38253b}.lifestyle-cards img{display:block;width:100%;height:420px;object-fit:cover;color:#f3e6ec}.lifestyle-cards figcaption{padding:12px;color:#f8eddf;background:#38253b;font-size:11px;letter-spacing:1.5px;font-weight:700}@media(max-width:680px){.lifestyle-gallery{padding-top:50px}.lifestyle-cards{grid-template-columns:1fr}.lifestyle-cards img{height:300px}}
+
+/* Mobile usability pass: 320px–tablet and safe-area aware layouts. */
+html,body{max-width:100%;overflow-x:clip}
+img{max-width:100%}
+.header nav a,.pills button,.header-actions button{touch-action:manipulation}
+@media(max-width:900px){
+ .header{gap:14px;padding:14px 22px}
+ .header nav{gap:16px;min-width:0}
+ .header nav a{white-space:nowrap}
+ .intro,.manifesto-grid{gap:30px}
+ .lifestyle-cards img{height:clamp(230px,37vw,370px)}
+}
+@media(max-width:680px){
+ .topbar{min-height:37px;line-height:1.4}
+ .header{position:relative;padding:12px 16px 8px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px}
+ .header .wordmark{min-width:0}
+ .header-actions{justify-self:end;gap:10px}
+ .header-actions button{min-height:44px;padding:5px}
+ .header nav{grid-column:1 / -1;order:initial;display:flex;gap:18px;width:100%;overflow-x:auto;overscroll-behavior-inline:contain;-webkit-overflow-scrolling:touch;padding:9px 0 11px;border-top:1px solid var(--line);scrollbar-width:thin}
+ .header nav a{flex:0 0 auto;white-space:nowrap;font-size:11px;min-height:30px;display:inline-flex;align-items:center}
+ .hero{min-height:560px;align-items:flex-end}
+ .hero-art{background-position:center,62% center;background-size:cover}
+ .hero-art:after{background:linear-gradient(0deg,rgba(18,10,21,.96) 0%,rgba(18,10,21,.7) 40%,rgba(18,10,21,.06) 100%)}
+ .hero-inner{padding:100px 20px 43px}
+ .hero h1{font-size:clamp(46px,12vw,68px);line-height:1.08;letter-spacing:-1.5px;overflow-wrap:normal}
+ .hero .eyebrow{font-size:9px;line-height:1.5;letter-spacing:1.3px}
+ .hero-inner>p:not(.eyebrow){font-size:15px;line-height:1.5;max-width:330px}
+ .hero-stats{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:8px 12px;font-size:9px}
+ .hero-script{display:none}
+ .intro{padding-top:52px;padding-bottom:54px}
+ .toolbar-right{width:100%}
+ .toolbar-right input{width:0;flex:1 1 0}
+ .toolbar-right select{flex:0 0 125px;max-width:125px}
+ .pills{display:flex;flex-wrap:wrap}
+ .pills button{min-height:40px}
+ .product-grid{gap:22px 12px}
+ .product-visual{height:clamp(178px,53vw,245px)}
+ .quick-inline{display:block;margin-top:7px;padding:7px 0;border:0;background:none;color:var(--plum);font-size:11px;font-weight:700;letter-spacing:.5px}
+ .lifestyle-cards img{height:clamp(210px,70vw,380px)}
+ .newsletter form{grid-template-columns:minmax(0,1fr)}
+ .newsletter button{min-height:45px}
+ .footer-bottom{flex-wrap:wrap}
+ .cart-drawer{width:min(430px,100vw);padding-bottom:env(safe-area-inset-bottom)}
+ .drawer-bottom{padding-bottom:max(24px,env(safe-area-inset-bottom))}
+ .modal-panel{padding:20px;max-height:calc(100dvh - 36px)}
+ .modal-details h2{font-size:29px}
+}
+@media(max-width:380px){
+ .topbar{font-size:7px}
+ .header .wordmark{font-size:21px}
+ .header nav{gap:13px}
+ .wrap{padding-left:16px;padding-right:16px}
+ .hero-inner{padding-left:16px;padding-right:16px}
+ .hero h1{font-size:clamp(43px,11.5vw,55px)}
+ .hero-stats{grid-template-columns:1fr 1fr}
+ .pills button{padding:8px 10px;font-size:10px}
+ .product-grid{gap:18px 9px}
+ .product-visual{height:175px}
+ .price-line{gap:6px;flex-wrap:wrap}
+ .newsletter h2{font-size:32px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cart-drawer{transition:none}}
