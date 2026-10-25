@@ -6,7 +6,7 @@ Bilingual (English / Español) ecommerce storefront for **authentic original des
 
 ## Project status
 
-**Preview / development — not ready to accept payments.** The existing catalog and prices are illustrative demonstration data. The site blocks live checkout until real Shopify product variants and a public Storefront API token are configured. Do not represent example prices, discounts, photos, inventory, or shipping claims as verified facts.
+**Preview / development — not ready to accept payments.** The 40-fragrance watchlist shows real external bottle photographs, but inventory, sizes, commercial image permissions and prices are not verified. The site blocks live checkout until real Shopify product variants and a public Storefront API token are configured. Do not represent example prices, discounts, photos, inventory, or shipping claims as verified facts.
 
 ## Preview
 
@@ -20,7 +20,7 @@ To enable: **Repository → Settings → Pages → Deploy from a branch → main
 
 - Responsive plum, ivory, and gold brand styling
 - English / Spanish language switcher
-- Demo fragrance catalog with men's, women's, and unisex categories
+- 40-fragrance men’s/women’s preview catalog with real bottle photography from traceable third-party product images
 - Search, sorting, item details, and persistent shopping bag
 - Shopify Storefront API secure checkout integration (disabled until configured)
 - Optional GA4 and Meta Pixel tracking with basic consent controls
@@ -65,8 +65,15 @@ See [SETUP.md](SETUP.md) for detailed instructions.
 
 ## Brand and image usage
 
-Primary campaign: **Huele Rico, Paga Menos.** The creative direction is urban and modern, featuring Latino and Afro-Latino lifestyle imagery. Brand boards and supplied lifestyle artwork are saved in the user's ChatGPT Library. Any creative depicting fictional **Huele Rico-branded fragrance bottles** must be edited to remove them before using it to advertise the real designer-fragrance assortment. Real product listings require properly sourced product photography and truthful descriptions.
+Primary campaign: **Huele Rico, Paga Menos.** The creative direction is urban and modern, featuring Latino and Afro-Latino lifestyle imagery. Brand boards and supplied lifestyle artwork are saved in the user's ChatGPT Library. Any creative depicting fictional **Huele Rico-branded fragrance bottles** must be edited to remove them before using it to advertise the real designer-fragrance assortment. The Top 40 cards, main preview catalog and product details now display 40 matched photographs via `product-photos.js`. These photographs are linked from third-party retailer/brand sources; their copyright, reuse permissions and hotlink availability are **not verified**. The photos are not yet hosted locally. Before activating a public for-sale catalog or paid ads, replace them with supplier-approved licensed assets, verify the exact bottle variant, availability, size and selling price, and confirm image loading across devices.
 
 ## Disclaimer
 
 Third-party brand names and marks identify products belonging to their respective owners. Huele Rico! does not imply affiliation, authorization, sponsorship or endorsement by any designer brand unless specifically established.
+
+## Real-product photography preview — 2026-10-24
+
+- **Implemented:** 20 men's + 20 women's exact product-photo references in `product-photos.js`, loaded on `index.html`, `trends.html`, and `product.html`.
+- **Not yet production-ready:** images link to third-party CDN hosts. This preview does not certify reproduction or advertising rights; hotlinks can expire or block referrers.
+- **Commerce remains disabled:** no verified Huele Rico inventory, prices, sizes or payment integration. The public pages must not imply that any displayed bottle is currently stocked.
+- **Before launch:** obtain original approved photography and supplier invoices, save product assets to `assets/products/`, replace third-party references, validate shipping/checkout, then remove `noindex` only when ready.
